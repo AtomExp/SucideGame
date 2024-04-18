@@ -8,14 +8,26 @@ public class EnableFall : MonoBehaviour
     public delegate void OnFallTrigger();
     public static OnFallTrigger fallTriggered;
     public bool isFalling = false;
+    public GameObject fallPrompt;
 
     void OnTriggerEnter(Collider collider)
     {
-        Debug.Log(collider.tag);
         if (collider.tag == "enablefall")
         {
-            isFalling = true;
-            fallTriggered();
+            fallPrompt.SetActive(true);
         }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "enablefall")
+        {
+            fallPrompt.SetActive(false);
+        }
+    }
+
+    public void Fall()
+    {
+        this.gameObject.transform.position = new Vector3(7.69f, 71.2f, -12.5f);
+        Debug.Log("I'm falling");
     }
 }
