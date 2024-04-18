@@ -30,7 +30,7 @@ public class hangingChecks : MonoBehaviour
         if (hasRope)
         {
             onChair = true;
-            player.transform.position = chair.transform.position - new Vector3(0, 0.6f, 0);
+            player.transform.position = chair.transform.position + new Vector3(0, 1f, 0);
         }
     }
 
@@ -47,7 +47,7 @@ public class hangingChecks : MonoBehaviour
     {
         if (decisionTime)
         {
-            player.transform.position = new Vector3(1.8f, 1.18f, 3.8f);
+            player.transform.position = new Vector3(-8.5f, 71.2f, -15.21f);
         }
     }
 
@@ -55,7 +55,7 @@ public class hangingChecks : MonoBehaviour
     {
         if (decisionTime)
         {
-            player.transform.position = noose.transform.position - new Vector3(0, 1.5f, 0);
+            player.transform.position = new Vector3(-9.1f, 71.922f, -16.156f);
         }
     }
 
