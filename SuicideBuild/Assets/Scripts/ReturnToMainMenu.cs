@@ -19,6 +19,6 @@ public class ReturnToMainMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
     }
 }
