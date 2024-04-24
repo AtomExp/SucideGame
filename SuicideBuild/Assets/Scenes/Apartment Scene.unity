@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44658285, g: 0.49641722, b: 0.57482105, a: 1}
+  m_IndirectSpecularColor: {r: 0.44658262, g: 0.4964168, b: 0.57482046, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21829,7 +21829,7 @@ MonoBehaviour:
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 1
-  m_ForwardSource: {fileID: 0}
+  m_ForwardSource: {fileID: 670514773}
   m_LeftHandMoveAction:
     m_UseReference: 0
     m_Action:
@@ -21843,7 +21843,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_RightHandMoveAction:
-    m_UseReference: 0
+    m_UseReference: 1
     m_Action:
       m_Name: Right Hand Move
       m_Type: 0
@@ -21853,7 +21853,7 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &1859071866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25817,6 +25817,10 @@ PrefabInstance:
     - target: {fileID: 1579111954926642283, guid: 40394708ab9f36240ba14f30f06c925b, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579111955085276523, guid: 40394708ab9f36240ba14f30f06c925b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1579111955085276523, guid: 40394708ab9f36240ba14f30f06c925b, type: 3}
       propertyPath: m_LeftHandSnapTurnAction.m_UseReference
