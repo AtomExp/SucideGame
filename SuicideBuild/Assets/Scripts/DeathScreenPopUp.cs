@@ -5,6 +5,12 @@ using UnityEngine;
 public class DeathScreenPopUp : MonoBehaviour
 {
     private Animator mAnimator;
+    private bool isDying = false;
+
+    public GameObject isAliveScreen;
+    public GameObject DeathScreen;
+
+    public Animator Darkscreen;
 
 	private void OnEnable()
 	{
@@ -18,6 +24,8 @@ public class DeathScreenPopUp : MonoBehaviour
     {
         mAnimator = GetComponent<Animator>();
         mAnimator.SetTrigger("TrMenuDown");
+        DeathScreen.SetActive(true);
+        isAliveScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,9 +43,25 @@ public class DeathScreenPopUp : MonoBehaviour
                 mAnimator.SetTrigger("TrMenuDown");
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            PauseDeath();
+        }
     }
     public void TriggerDeath()
     {
         mAnimator.SetTrigger("TrMenuUp");
+        isDying = true;
+    }
+
+    public void PauseDeath()
+    {
+        if (isDying)
+        {
+            DeathScreen.SetActive(false);
+            isAliveScreen.SetActive(true);
+            Darkscreen.speed = 0;
+        }
     }
 }
