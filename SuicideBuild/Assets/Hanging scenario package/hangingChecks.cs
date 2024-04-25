@@ -6,7 +6,7 @@ public class hangingChecks : MonoBehaviour
 {
     public bool hasRope = false;
     public bool onChair = false;
-    public bool decisionTime = false;
+    public bool inNoose = false;
     public bool nooseIsUp = false;
     public bool hasPlant = false;
 
@@ -15,14 +15,6 @@ public class hangingChecks : MonoBehaviour
     public void pickedUpRope()
     {
         hasRope = true;
-    }
-
-    public void updateDecision()
-    {
-        if(nooseIsUp)
-        {
-            decisionTime = true;
-        }
     }
 
     public void movePlayerOnChair()
@@ -45,18 +37,21 @@ public class hangingChecks : MonoBehaviour
 
     public void getDown()
     {
-        if (decisionTime)
+        if (onChair || inNoose)
         {
             player.transform.position = new Vector3(-8.5f, 71.2f, -15.21f);
         }
+
+        onChair = false;
+        inNoose = false;
     }
 
     public void getInNoose()
     {
-        if (decisionTime)
-        {
-            player.transform.position = new Vector3(-9.1f, 71.922f, -16.156f);
-        }
+        inNoose = true;
+        onChair = false;
+
+        player.transform.position = new Vector3(-9.1f, 71.922f, -16.156f);
     }
 
     public void pickedUpPlant()
