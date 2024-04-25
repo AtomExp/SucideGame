@@ -40,6 +40,9 @@ public class TeleportationController : MonoBehaviour
     //Stores Action for Teleport Mode Cancel
     private InputAction _teleportCancel;
 
+    //Stores Action for Turning
+    private InputAction _teleportTurn;
+
     void Start()
     {
         //We don't want the rayInteractor to on unless we're using the forward press on the thumbstick so we deactivate it here
@@ -57,6 +60,12 @@ public class TeleportationController : MonoBehaviour
         _teleportCancel = inputAction.FindActionMap("XRI " + targetController.ToString() + " Locomotion").FindAction("Teleport Mode Cancel");
         _teleportCancel.Enable();
         _teleportCancel.performed += OnTeleportCancel;
+
+        //This will find the Action Map of our target controller for Turning.
+        //It will enable it and then subscribe itself to our OnTurn function
+        _teleportTurn = inputAction.FindActionMap("XRI " + targetController.ToString() + " Locomotion").FindAction("Turn");
+        _teleportTurn.Enable();
+        _teleportTurn.performed += OnTurn;
 
 
         //We grab this reference so we can use it to tell if the thumbstick is still being pressed
@@ -128,5 +137,18 @@ public class TeleportationController : MonoBehaviour
             _teleportIsActive = false;
         }
 
+    }
+
+    private void OnTurn(InputAction.CallbackContext context)
+    {
+        Vector3 value = new Vector2();
+
+        value = context.ReadValue<Vector2>() * 15;
+        Debug.Log("Started " + value);
+
+        GameObject origin = GameObject.Find("XR Origin");
+        origin.transform.Rotate(Vector3.up, value.x);
+
+        Debug.Log("Method End " + value);
     }
 }
