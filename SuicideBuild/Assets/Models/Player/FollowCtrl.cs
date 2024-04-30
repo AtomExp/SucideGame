@@ -7,6 +7,7 @@ public class FollowCtrl : MonoBehaviour
 
     [SerializeField] GameObject followObj;
     [SerializeField] bool followPos, followRot;
+    [SerializeField] Quaternion adjustRot;
     private void Update()
     {
         if (followPos)
@@ -15,7 +16,7 @@ public class FollowCtrl : MonoBehaviour
         }
         if (followRot)
         {
-            this.transform.rotation = followObj.transform.rotation;
+            this.transform.rotation = followObj.transform.rotation * adjustRot;
         }
     }
 }
