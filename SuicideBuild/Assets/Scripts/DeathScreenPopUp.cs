@@ -15,10 +15,12 @@ public class DeathScreenPopUp : MonoBehaviour
 	private void OnEnable()
 	{
         DeathScreenTriggerScript.deathTriggered += TriggerDeath;
-	}
+        DeathScreenTriggerScript.deathTriggeredLonger += TriggerDeathLonger;
+    }
     private void OnDisable()
     {
         DeathScreenTriggerScript.deathTriggered -= TriggerDeath;
+        DeathScreenTriggerScript.deathTriggeredLonger -= TriggerDeathLonger;
     }
     void Start()
     {
@@ -52,6 +54,11 @@ public class DeathScreenPopUp : MonoBehaviour
     public void TriggerDeath()
     {
         mAnimator.SetTrigger("TrMenuUp");
+        isDying = true;
+    }
+    public void TriggerDeathLonger()
+    {
+        mAnimator.SetTrigger("LongerDeath");
         isDying = true;
     }
 

@@ -8,10 +8,12 @@ public class TintScreen : MonoBehaviour
     private void OnEnable()
     {
         DeathScreenTriggerScript.deathTriggered += TriggerDeath;
+        DeathScreenTriggerScript.deathTriggeredLonger += TriggerDeathLonger;
     }
     private void OnDisable()
     {
         DeathScreenTriggerScript.deathTriggered -= TriggerDeath;
+        DeathScreenTriggerScript.deathTriggeredLonger -= TriggerDeathLonger;
     }
     void Start()
     {
@@ -20,5 +22,9 @@ public class TintScreen : MonoBehaviour
     public void TriggerDeath()
     {
         mAnimator.SetTrigger("TrStart");
+    }
+    public void TriggerDeathLonger()
+    {
+        mAnimator.SetTrigger("TrStartLonger");
     }
 }
