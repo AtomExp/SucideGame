@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1501071505478340731}
   - component: {fileID: 3688474333315835057}
   - component: {fileID: 8474393327575074212}
+  - component: {fileID: 5866666020504683671}
   m_Layer: 0
   m_Name: VRModelV3Head
   m_TagString: Untagged
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2896073689042781540}
-  m_LocalRotation: {x: 0.000000030908623, y: 0.7071068, z: 0.7071067, w: 0.000000030908616}
+  m_LocalRotation: {x: 0, y: 0.7069834, z: 0.7072302, w: 0}
   m_LocalPosition: {x: 0.009710547, y: 1.006527, z: -0.014553095}
   m_LocalScale: {x: 6.1103683, y: 2.0225427, z: 8.683845}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 180}
 --- !u!33 &1501071505478340731
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -104,3 +105,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5866666020504683671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2896073689042781540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fa5b2aa584a7d44b22085b7db30d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followObj: {fileID: 0}
+  followPos: 1
+  followRot: 1
+  adjustRot: {x: -0.11670421, y: -0.6974096, z: -0.6974096, w: 0.11670421}
