@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject Options;
     public GameObject Mainmenu;
+    public GameObject skinMenu;
     public void StartScene()
     {
         SceneManager.LoadScene("Apartment Scene");
@@ -21,6 +22,18 @@ public class MainMenu : MonoBehaviour
     {
         Options.SetActive(false);
         Mainmenu.SetActive(true);
+    }
+
+    public void openSkinMenu()
+    {
+        skinMenu.SetActive(true);
+        Options.SetActive(false);
+    }
+
+    public void closeSkinMenu()
+    {
+        skinMenu.SetActive(false);
+        Options.SetActive(true);
     }
 
 }

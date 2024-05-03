@@ -1412,7 +1412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Timeout: 10
-  m_XROrigin: {fileID: 0}
+  m_XROrigin: {fileID: 1579111954926642283}
 --- !u!114 &1579111955085276522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,7 +1479,7 @@ GameObject:
   - component: {fileID: 1579111955090219127}
   - component: {fileID: 1579111955090219124}
   - component: {fileID: 1579111955090219125}
-  - component: {fileID: 1579111955090219122}
+  - component: {fileID: 1842399776}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -1629,7 +1629,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a90bbc12d82e26a42b8c6e068ffac78a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1819,7 +1819,7 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
---- !u!114 &1579111955090219122
+--- !u!114 &1842399776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1834,7 +1834,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 4470927742812193306, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
+  m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0
@@ -1997,7 +1997,7 @@ GameObject:
   - component: {fileID: 1579111955383877005}
   - component: {fileID: 1579111955383877002}
   - component: {fileID: 1579111955383877003}
-  - component: {fileID: 1579111955383877000}
+  - component: {fileID: 1596968956}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -2147,7 +2147,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a90bbc12d82e26a42b8c6e068ffac78a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 0}
   m_StopLineAtFirstRaycastHit: 1
---- !u!114 &1579111955383877000
+--- !u!114 &1596968956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2352,7 +2352,7 @@ MonoBehaviour:
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
   m_EnableInputActions: 1
-  m_ModelPrefab: {fileID: 4470927742812193306, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
+  m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
   m_AnimateModel: 0

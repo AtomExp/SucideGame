@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,38 +8,10 @@ using UnityEngine.EventSystems;
 public class SelectColor : MonoBehaviour
 {
     [SerializeField] List<Material> skinMats;
-    [SerializeField] List<GameObject> playerMats;
-    [SerializeField] SkinColor skinColor;
+    [SerializeField] Material playerMat;
 
-    public void OnClick()
+    public void ChangeSkinColor(int colorIndex)
     {
-        Debug.Log("Start");
-        switch (skinColor)
-        {
-            case SkinColor.One:
-                ChangeSkinColor(skinMats[0]); break;
-            case SkinColor.Two:
-                ChangeSkinColor(skinMats[1]); break;
-            case SkinColor.Three:
-                ChangeSkinColor(skinMats[2]); break;
-            case SkinColor.Four:
-                ChangeSkinColor(skinMats[3]); break;
-            case SkinColor.Five:
-                ChangeSkinColor(skinMats[4]); break;
-        }
-        Debug.Log("End");
-    }
-
-    void ChangeSkinColor(Material color)
-    {
-        foreach (GameObject obj in playerMats)
-        {
-            obj.GetComponent<MeshRenderer>().material = color;
-        }
-    }
-
-    enum SkinColor
-    {
-        One, Two, Three, Four, Five
+        playerMat.color = skinMats[colorIndex].color;
     }
 }

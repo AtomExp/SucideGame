@@ -165,10 +165,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f05ff59b81e3f484181829406cbb4930, type: 2}
   - {fileID: 2100000, guid: 5a3976d42d3544d40bae78fb12561fdf, type: 2}
   - {fileID: 2100000, guid: 33f39a1d397af394b88aecd131339b6a, type: 2}
-  playerMats:
-  - {fileID: 919132148412499030}
-  - {fileID: 829730796}
-  - {fileID: 1427721294}
+  playerMat: {fileID: 0}
   skinColor: 0
 --- !u!114 &31579158
 MonoBehaviour:
@@ -420,10 +417,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f05ff59b81e3f484181829406cbb4930, type: 2}
   - {fileID: 2100000, guid: 5a3976d42d3544d40bae78fb12561fdf, type: 2}
   - {fileID: 2100000, guid: 33f39a1d397af394b88aecd131339b6a, type: 2}
-  playerMats:
-  - {fileID: 919132148412499030}
-  - {fileID: 829730796}
-  - {fileID: 1427721294}
+  playerMat: {fileID: 0}
   skinColor: 4
 --- !u!114 &588982880
 MonoBehaviour:
@@ -557,10 +551,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f05ff59b81e3f484181829406cbb4930, type: 2}
   - {fileID: 2100000, guid: 5a3976d42d3544d40bae78fb12561fdf, type: 2}
   - {fileID: 2100000, guid: 33f39a1d397af394b88aecd131339b6a, type: 2}
-  playerMats:
-  - {fileID: 919132148412499030}
-  - {fileID: 829730796}
-  - {fileID: 1427721294}
+  playerMat: {fileID: 0}
   skinColor: 3
 --- !u!114 &646992283
 MonoBehaviour:
@@ -1044,11 +1035,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3837134728179407008, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
   m_PrefabInstance: {fileID: 829730794}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &829730796 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8848964078346238734, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
-  m_PrefabInstance: {fileID: 829730794}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &829730797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1310,11 +1296,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3837134728179407008, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
   m_PrefabInstance: {fileID: 1427721292}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1427721294 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8848964078346238734, guid: c64926a922b29b24d8e2a9d80315a8d4, type: 3}
-  m_PrefabInstance: {fileID: 1427721292}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1427721295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1388,10 +1369,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f05ff59b81e3f484181829406cbb4930, type: 2}
   - {fileID: 2100000, guid: 5a3976d42d3544d40bae78fb12561fdf, type: 2}
   - {fileID: 2100000, guid: 33f39a1d397af394b88aecd131339b6a, type: 2}
-  playerMats:
-  - {fileID: 919132148412499030}
-  - {fileID: 829730796}
-  - {fileID: 1427721294}
+  playerMat: {fileID: 0}
   skinColor: 1
 --- !u!114 &1617605560
 MonoBehaviour:
@@ -1488,10 +1466,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f05ff59b81e3f484181829406cbb4930, type: 2}
   - {fileID: 2100000, guid: 5a3976d42d3544d40bae78fb12561fdf, type: 2}
   - {fileID: 2100000, guid: 33f39a1d397af394b88aecd131339b6a, type: 2}
-  playerMats:
-  - {fileID: 919132148412499030}
-  - {fileID: 829730796}
-  - {fileID: 1427721294}
+  playerMat: {fileID: 0}
   skinColor: 2
 --- !u!114 &1868878644
 MonoBehaviour:
@@ -1979,10 +1954,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRModelV3Head
       objectReference: {fileID: 0}
-    - target: {fileID: 3688474333315835057, guid: 440f2cfa5bed422458c502fc67b33ad5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 799ea32d53cb4cd4783b5beb631fee9f, type: 2}
     - target: {fileID: 5866666020504683671, guid: 440f2cfa5bed422458c502fc67b33ad5, type: 3}
       propertyPath: followObj
       value: 
