@@ -8,8 +8,14 @@ public class MainMenu : MonoBehaviour
     public GameObject Options;
     public GameObject Mainmenu;
     public GameObject skinMenu;
+    public SelectColor colorscript;
+
     public void StartScene()
     {
+        if (!colorscript.picked)
+        {
+            colorscript.playerMat.color = colorscript.skinMats[1].color;
+        }
         SceneManager.LoadScene("Apartment Scene");
     }
 

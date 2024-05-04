@@ -7,11 +7,14 @@ using UnityEngine.EventSystems;
 
 public class SelectColor : MonoBehaviour
 {
-    [SerializeField] List<Material> skinMats;
-    [SerializeField] Material playerMat;
+    [SerializeField] public List<Material> skinMats;
+    [SerializeField] public Material playerMat;
+
+    public bool picked = false;
 
     public void ChangeSkinColor(int colorIndex)
     {
+        picked = true;
         playerMat.color = skinMats[colorIndex].color;
     }
 }
