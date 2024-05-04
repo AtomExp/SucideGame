@@ -10,7 +10,7 @@ public class hangingChecks : MonoBehaviour
     public bool nooseIsUp = false;
     public bool hasPlant = false;
 
-    public GameObject noose, player, chair, hangingPlant;
+    public GameObject noose, player, chair, hangingPlant, kill;
 
     public void pickedUpRope()
     {
@@ -32,6 +32,7 @@ public class hangingChecks : MonoBehaviour
         {
             noose.SetActive(true);
             nooseIsUp = true;
+            kill.SetActive(true);
         }
     }
 
@@ -52,6 +53,7 @@ public class hangingChecks : MonoBehaviour
         onChair = false;
 
         player.transform.position = new Vector3(-9.1f, 71.922f, -16.156f);
+        kill.SetActive(true);
     }
 
     public void pickedUpPlant()
